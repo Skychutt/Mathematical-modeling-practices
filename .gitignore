@@ -1,0 +1,23 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Demo outputs
+**/_demo_data/
+*.png
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

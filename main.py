@@ -11,6 +11,10 @@
   01_python基础/10_热力图与三维.py
   01_python基础/11_算法结果可视化.py
 
+规划类：
+  01_python基础/12_线性规划.py
+  01_python基础/13_非线性规划.py
+
 推荐用法：
   1) pip install -r requirements.txt
   2) 直接运行某个练习文件，例如：

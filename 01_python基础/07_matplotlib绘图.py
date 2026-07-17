@@ -67,8 +67,33 @@ def plot_contour():
     plt.close()
 
 
+def plot_subplots_style():
+    """论文常用：2×2 子图排版。"""
+    x = np.linspace(0, 4, 100)
+    fig, axes = plt.subplots(2, 2, figsize=(8, 6))
+    axes[0, 0].plot(x, np.exp(-x), color="#4C72B0")
+    axes[0, 0].set_title("衰减曲线")
+    axes[0, 1].fill_between(x, np.sin(x), alpha=0.4, color="#55A868")
+    axes[0, 1].plot(x, np.sin(x), color="#55A868")
+    axes[0, 1].set_title("填充折线")
+    axes[1, 0].step(x[::5], np.cos(x[::5]), where="mid", color="#C44E52")
+    axes[1, 0].set_title("阶梯图")
+    axes[1, 1].plot(x, x**2, label="x^2")
+    axes[1, 1].plot(x, x**1.5, label="x^1.5")
+    axes[1, 1].legend(fontsize=8)
+    axes[1, 1].set_title("多曲线")
+    for ax in axes.ravel():
+        ax.grid(True, alpha=0.25)
+    fig.suptitle("子图排版示例", fontsize=12)
+    fig.tight_layout()
+    fig.savefig(OUT / "subplots.png", dpi=120)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     plot_curve()
     plot_scatter_and_hist()
     plot_contour()
+    plot_subplots_style()
     print(f"图片已保存到: {OUT}")
+    print("更多图表见: 09_常用统计图表.py / 10_热力图与三维.py / 11_算法结果可视化.py")

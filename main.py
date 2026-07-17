@@ -2,8 +2,14 @@
 数学建模 Python 练习 —— 项目入口
 
 目录：
-  01_python基础/     语法、NumPy、Matplotlib、SciPy
+  01_python基础/     语法、NumPy、Matplotlib 可视化、SciPy
   02_启发式算法/     贪心、爬山、模拟退火、遗传、粒子群、禁忌、蚁群
+
+可视化练习：
+  01_python基础/07_matplotlib绘图.py
+  01_python基础/09_常用统计图表.py
+  01_python基础/10_热力图与三维.py
+  01_python基础/11_算法结果可视化.py
 
 推荐用法：
   1) pip install -r requirements.txt

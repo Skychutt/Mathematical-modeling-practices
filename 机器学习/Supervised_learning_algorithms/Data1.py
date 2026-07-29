@@ -1,7 +1,8 @@
 import mglearn
 import matplotlib.pyplot as plt
 #生成数据集
-X, y = mglearn.datasets.make_forge() #make_forge()：生成一个小型二分类数据集（经典监督学习演示数据集）
+X, y = mglearn.datasets.make_forge() #make_forge()： 是分类数据集（用来做分类任务）
+# 生成一个小型二分类数据集（经典监督学习演示数据集）
 #数据集绘制
 mglearn.discrete_scatter(X[:, 0], X[:, 1], y)
 plt.legend(["Class 0","Class 1"],loc = 4)  #legend：图例，loc=4 代表右下角；
